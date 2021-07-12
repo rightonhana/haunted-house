@@ -3,7 +3,7 @@ import { PerspectiveCamera, WebGLRenderer } from "three";
 /**
 * On resize window
 */
-export const onResize = (width: number, height: number, camera: PerspectiveCamera, renderer: WebGLRenderer) => {
+export const resizeWindow = (width: number, height: number, camera: PerspectiveCamera, renderer: WebGLRenderer) => {
 		// Update size
 		width = window.innerWidth;
 		height = window.innerHeight;
