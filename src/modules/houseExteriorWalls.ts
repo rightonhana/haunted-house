@@ -18,22 +18,22 @@ for (let i = 0; i < 10; i++) {
 	right.add(exteriorWall)
 }
 const horizontalWall1 = new Mesh(
-	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3, 16),
+	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3.5, 16),
 	new MeshStandardMaterial({ color: "#ddd"})
 );
 horizontalWall1.rotation.z = Math.PI * 0.5;
 horizontalWall1.position.y = exteriorWallHeight - 0.1;
 horizontalWall1.position.z = 6;
-horizontalWall1.position.x = 3;
+horizontalWall1.position.x = 3.3;
 
 const horizontalWall2 = new Mesh(
-	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3, 16),
+	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3.5, 16),
 	new MeshStandardMaterial({ color: "#ddd"})
 );
 horizontalWall2.rotation.z = Math.PI * 0.5;
 horizontalWall2.position.y = 0.1;
 horizontalWall2.position.z = 6;
-horizontalWall2.position.x = 3;
+horizontalWall2.position.x = 3.3;
 
 right.add(horizontalWall1, horizontalWall2);
 
@@ -57,22 +57,22 @@ for (let i = 0; i < 10; i++) {
 	left.add(exteriorWall)
 }
 const horizontalWall3 = new Mesh(
-	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3, 16),
+	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3.5, 16),
 	new MeshStandardMaterial({ color: "#ddd"})
 );
 horizontalWall3.rotation.z = Math.PI * 0.5;
 horizontalWall3.position.y = exteriorWallHeight - 0.1;
 horizontalWall3.position.z = 6;
-horizontalWall3.position.x = -3;
+horizontalWall3.position.x = -3.3;
 
 const horizontalWall4 = new Mesh(
-	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3, 16),
+	new CylinderGeometry(exteriorWallRadius, exteriorWallRadius, exteriorWallHeight * 3.5, 16),
 	new MeshStandardMaterial({ color: "#ddd"})
 );
 horizontalWall4.rotation.z = Math.PI * 0.5;
 horizontalWall4.position.y = 0.1;
 horizontalWall4.position.z = 6;
-horizontalWall4.position.x = -3;
+horizontalWall4.position.x = -3.3;
 
 
 left.add(horizontalWall3, horizontalWall4);
