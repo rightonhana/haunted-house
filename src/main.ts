@@ -59,7 +59,7 @@ scene.fog = fog;
 // Text
 const fontLoader = new FontLoader();
 fontLoader.load(
-	"/fonts/halloween_night_regular.json",
+	"./fonts/halloween_night_regular.json",
 	(font) => {
 	 const textGeometry = new TextGeometry("Haunted House", {
 			font,
@@ -86,7 +86,7 @@ let ghost2: Scene;
 let ghost3: Scene;
 const loader = new GLTFLoader();
 loader.load(
-	"/models/ghost.gltf",
+	"./models/ghost.gltf",
 	(gltf: any) => {
 		gltf.scene.children[0].position.x = 0;
 		gltf.scene.children[0].position.y = 0.5;
@@ -109,7 +109,7 @@ loader.load(
 	() => console.log( "An error happened" )
 );
 loader.load(
-	"/models/ghost.gltf",
+	"./models/ghost.gltf",
 	(gltf: any) => {
 		gltf.scene.children[0].position.x = 0;
 		gltf.scene.children[0].position.y = 0.5;
@@ -132,7 +132,7 @@ loader.load(
 	() => console.log( "An error happened" )
 );
 loader.load(
-	"/models/ghost.gltf",
+	"./models/ghost.gltf",
 	(gltf: any) => {
 		gltf.scene.children[0].position.x = 0;
 		gltf.scene.children[0].position.y = 0.5;
