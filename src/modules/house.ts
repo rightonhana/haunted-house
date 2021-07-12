@@ -1,6 +1,6 @@
-import { Group, Mesh, BoxGeometry, PlaneGeometry, MeshStandardMaterial, ConeGeometry, CylinderGeometry } from 'three';
-import { bushes, houseBushes } from './bushes';
-import { doorLight } from './lights';
+import { Group, Mesh, BoxGeometry, PlaneGeometry, MeshStandardMaterial, ConeGeometry, CylinderGeometry } from "three";
+import { bushes, houseBushes } from "./bushes";
+import { doorLight } from "./lights";
 
 export const house = new Group() as Group & {children: Mesh[]};
 

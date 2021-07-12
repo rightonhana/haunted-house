@@ -1,4 +1,4 @@
-import { Mesh, PlaneGeometry, MeshStandardMaterial } from 'three';
+import { Mesh, PlaneGeometry, MeshStandardMaterial } from "three";
 
 const width = 50;
 const height = 50;

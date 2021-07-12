@@ -1,14 +1,14 @@
-import './style.css'
-import { ambientLight } from './modules/lights';
-import { floor } from './modules/floor';
+import "./style.css"
+import { ambientLight } from "./modules/lights";
+import { floor } from "./modules/floor";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { graves } from './modules/graves';
-import { house } from './modules/house';
-import { houseExteriorWalls } from './modules/houseExteriorWalls';
-import { onResize } from './utils/onResize';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { perspectiveCamera } from './modules/camera';
-import { webGLRenderer } from './utils/webGLRenderer';
+import { graves } from "./modules/graves";
+import { house } from "./modules/house";
+import { houseExteriorWalls } from "./modules/houseExteriorWalls";
+import { resizeWindow } from "./utils/resizeWindow";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { perspectiveCamera } from "./modules/camera";
+import { webGLRenderer } from "./utils/webGLRenderer";
 import {
 	Clock,
 	Fog,
@@ -18,10 +18,10 @@ import {
 	PCFSoftShadowMap,
 	Scene,
 	TextGeometry
-} from 'three';
+} from "three";
 
 // Canvas
-const canvas = document.querySelector<HTMLCanvasElement>('.webgl')!;
+const canvas = document.querySelector<HTMLCanvasElement>(".webgl")!;
 
 // Scene
 const scene =  new Scene();
@@ -43,7 +43,7 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = PCFSoftShadowMap;
 
 // Resize event Listener
-window.addEventListener('resize', () => onResize(size.width, size.height, camera, renderer));
+window.addEventListener("resize", () => resizeWindow(size.width, size.height, camera, renderer));
 
 //Controls
 const controls = new OrbitControls(camera, canvas);
@@ -86,7 +86,7 @@ let ghost2: Scene;
 let ghost3: Scene;
 const loader = new GLTFLoader();
 loader.load(
-	'/models/ghost.gltf',
+	"/models/ghost.gltf",
 	(gltf: any) => {
 		gltf.scene.children[0].position.x = 0;
 		gltf.scene.children[0].position.y = 0.5;
@@ -105,11 +105,11 @@ loader.load(
 		ghost1 = gltf.scene;
 		scene.add(ghost1);
 	},
-	(xhr: ProgressEvent) => console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' ),
-	() => console.log( 'An error happened' )
+	(xhr: ProgressEvent) => console.log( ( xhr.loaded / xhr.total * 100 ) + "% loaded" ),
+	() => console.log( "An error happened" )
 );
 loader.load(
-	'/models/ghost.gltf',
+	"/models/ghost.gltf",
 	(gltf: any) => {
 		gltf.scene.children[0].position.x = 0;
 		gltf.scene.children[0].position.y = 0.5;
@@ -128,11 +128,11 @@ loader.load(
 		ghost2 = gltf.scene;
 		scene.add(ghost2);
 	},
-	(xhr: ProgressEvent) => console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' ),
-	() => console.log( 'An error happened' )
+	(xhr: ProgressEvent) => console.log( ( xhr.loaded / xhr.total * 100 ) + "% loaded" ),
+	() => console.log( "An error happened" )
 );
 loader.load(
-	'/models/ghost.gltf',
+	"/models/ghost.gltf",
 	(gltf: any) => {
 		gltf.scene.children[0].position.x = 0;
 		gltf.scene.children[0].position.y = 0.5;
@@ -151,8 +151,8 @@ loader.load(
 		ghost3 = gltf.scene;
 		scene.add(ghost3);
 	},
-	(xhr: ProgressEvent) => console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' ),
-	() => console.log( 'An error happened' )
+	(xhr: ProgressEvent) => console.log( ( xhr.loaded / xhr.total * 100 ) + "% loaded" ),
+	() => console.log( "An error happened" )
 );
 
 // Animation

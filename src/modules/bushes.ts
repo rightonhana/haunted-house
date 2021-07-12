@@ -1,4 +1,4 @@
-import { Mesh, SphereGeometry, MeshStandardMaterial, Group } from 'three'
+import { Mesh, SphereGeometry, MeshStandardMaterial, Group } from "three";
 
 const bushGeometry = new SphereGeometry(1,16,16);
 const bushMaterial = new MeshStandardMaterial({ color: "#004d40" });

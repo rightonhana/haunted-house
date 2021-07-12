@@ -1,4 +1,4 @@
-import { Group, Mesh, MeshStandardMaterial, CylinderGeometry } from 'three';
+import { Group, Mesh, MeshStandardMaterial, CylinderGeometry } from "three";
 
 export const houseExteriorWalls = new Group();
 const left = new Group();

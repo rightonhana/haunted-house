@@ -1,4 +1,4 @@
-import { PerspectiveCamera } from 'three';
+import { PerspectiveCamera } from "three";
 
 export const perspectiveCamera = (width: number, height: number) => {
 	const camera = new PerspectiveCamera(75, width / height, 0.1, 100);
