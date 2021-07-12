@@ -1,28 +1,20 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@tweakpane/core': ^1.0.3
   '@types/three': ^0.130.0
   three: ^0.130.1
-  tweakpane: ^3.0.2
   typescript: ^4.3.2
   vite: ^2.4.0
 
 dependencies:
   three: 0.130.1
-  tweakpane: 3.0.2
 
 devDependencies:
-  '@tweakpane/core': 1.0.3
   '@types/three': 0.130.0
   typescript: 4.3.5
   vite: 2.4.1
 
 packages:
-
-  /@tweakpane/core/1.0.3:
-    resolution: {integrity: sha512-uqPGCUR5a1bEvSV1bUrgeDmd3AL9Y6ZpL9rxMa8KJqymyDMOlAKF6UJUa+k4r4y6EOfF2CUygzxFOgZxrPL43A==}
-    dev: true
 
   /@types/three/0.130.0:
     resolution: {integrity: sha512-7MKKxlEjHoAGTBRxEcDOjO4OvOrvUM6xtyjPiubNcU6bRPNmjNaV/PI9tiaXkk8cauZ9FuRbdCV4g0rQod+FkQ==}
@@ -103,10 +95,6 @@ packages:
 
   /three/0.130.1:
     resolution: {integrity: sha512-OSPPKcGvFSiGkG3jFrwwC76PBV/ZSrGxpBbg28bW8s9GU8r/y2spNGtEXHEb/CVqo0Ctf5Lx2rVaxQZB6OasaA==}
-    dev: false
-
-  /tweakpane/3.0.2:
-    resolution: {integrity: sha512-SCiK3S466ElC8Uws0BgO69I5rcpY+0JgPzxpwn0nn7yGHeqEjCHsu7Qvd/L7wJPUaUY13PIEniJeV99ff8oy6Q==}
     dev: false
 
   /typescript/4.3.5:

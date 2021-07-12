@@ -2,11 +2,9 @@
   "name": "haunted-house",
   "version": "0.0.0",
   "dependencies": {
-    "three": "^0.130.1",
-    "tweakpane": "^3.0.2"
+    "three": "^0.130.1"
   },
   "devDependencies": {
-    "@tweakpane/core": "^1.0.3",
     "@types/three": "^0.130.0",
     "typescript": "^4.3.2",
     "vite": "^2.4.0"
